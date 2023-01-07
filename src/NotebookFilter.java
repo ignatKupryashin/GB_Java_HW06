@@ -11,14 +11,6 @@ public class NotebookFilter {
 
     NotebookFilter(NotebookCatalog catalog) {
         this.clear(catalog);
-
-//        minRAM = 0;
-//        maxRAM = catalog.maxRam;
-//        minStorage = 0;
-//        maxStorage = catalog.maxStorage;
-//        color = "Любой";
-//        minPrice = 0;
-//        maxPrice = catalog.maxPrice;
     }
 
     public void setFilterMaxPrice(int price){

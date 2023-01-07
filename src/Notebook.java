@@ -1,11 +1,15 @@
 
+/**
+ * Объединяет параметры отдельного ноутбука
+*/
+
 public class Notebook {
-        String modelName; //Наименование
-        int RAM; //Объем оперативной памяти
-        int storage; // Объем жеткого диска
-        String OS; // Операционная система
-        String color; // Цвет
-        int price;
+        private String modelName; //Наименование
+         private int RAM; //Объем оперативной памяти
+        private int storage; // Объем жеткого диска
+         private String OS; // Операционная система
+        private String color; // Цвет
+        private int price;
 
     Notebook(String argModelName, int argRAM, int argStorage, String argOS, String argColor, int argPrice) {
         modelName = argModelName;
@@ -16,6 +20,27 @@ public class Notebook {
         price = argPrice;
     }
 
+
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public void setRAM(int RAM) {
+        this.RAM = RAM;
+    }
+
+    public void setStorage(int storage) {
+        this.storage = storage;
+    }
+
+    public void setOS(String OS) {
+        this.OS = OS;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public String getModelName() {
         return modelName;
@@ -46,6 +71,9 @@ public class Notebook {
         System.out.println(String.format("Цена на ноутбук %s установлена в размере %d", modelName, price));
     }
 
+    /**
+     * Выводит информацию о конкретном ноутбуке
+    * */
     public void showInfo() {
         System.out.println(String.format("" +
                 "Наименование: %s\n" +
